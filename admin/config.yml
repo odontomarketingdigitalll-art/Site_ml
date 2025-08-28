@@ -1,7 +1,8 @@
+
 backend:
   name: git-gateway
   branch: main
-  site_id: "7c5e53af-1cfe-45d2-a1a9-9456246833fb"
+  site_id: "7c5e53af-1cfe-45d2-a1a9-9456246833fb"   # seu site_id do Netlify
 
 media_folder: "static/img"   # onde as imagens vão ser salvas no repositório
 public_folder: "/img"

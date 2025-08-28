@@ -1,6 +1,5 @@
 
-
 backend:
   name: github
-  repo: seu-usuario/seu-repo
+  repo: odontomarketingdigitall1-art/Site_ml
   branch: main

@@ -1,18 +1,18 @@
 backend:
   name: git-gateway
   branch: main
+  site_id: "SEU_SITE_ID_DO_NETLIFY"
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_folder: "static/img"   # onde as imagens vão ser salvas no repositório
+public_folder: "/img"
 
 collections:
-  - name: "paginas"
-    label: "Páginas do Site"
-    files:
-      - file: "index.html"
-        label: "Página Inicial"
-        name: "home"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "body", widget: "markdown" }
-          - { label: "Imagem", name: "image", widget: "image" }
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
